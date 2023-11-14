@@ -1,0 +1,27 @@
+.sortdata{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    input{
+        border: 2px solid lightgreen;
+        height: 40px;
+        border-radius: 10px;
+    }
+    select{
+        background-color: lightgreen;
+        height: 40px;
+        border-radius: 10px;
+    }
+}
+
+@include mobile{
+    .sortdata{
+            flex-direction: column;
+    }
+}
+@include tablet{
+    .sortdata{
+            flex-direction: column;
+    }
+}

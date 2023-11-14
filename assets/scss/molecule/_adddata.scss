@@ -1,0 +1,32 @@
+.adddata{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    input{
+        border: 2px solid lightgreen;
+        border-radius: 10px;
+        height: 40px;
+    }
+    &__bottom{
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        align-items: center;
+    }
+}
+
+@include mobile{
+    .adddata{
+        &__bottom{
+            flex-direction: column;
+        }
+    }
+}
+@include tablet{
+    .adddata{
+        &__bottom{
+            flex-direction: column;
+        }
+    }
+}

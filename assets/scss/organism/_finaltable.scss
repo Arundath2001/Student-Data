@@ -1,0 +1,27 @@
+.finaltable{
+    background: linear-gradient(100deg, #a9df5a, #94e9ab);
+    height: 100vh;
+    padding: 10px;    
+    font-weight: bolder;
+    &__cont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin: 100px auto 100px;
+        border-radius: 10px;
+        background-color: white;
+        padding: 30px;
+    }
+}
+
+@include mobile{
+    .finaltable{
+        height: 100%;
+    }
+}
+@include tablet{
+    .finaltable{
+        height: 100%;
+    }
+}
